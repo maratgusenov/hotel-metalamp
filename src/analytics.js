@@ -1,14 +1,14 @@
 function createAnalytics() {
-  let counter = 0 
+  let counter = 0
   let isDestroyed = false
 
   const listener = () => counter++
 
-  $(document).on('click', listener)
+  document.addEventListener('click', listener)
 
   return {
     destroy() {
-      $(document).off('click', listener)
+      document.removeEventListener('click', listener)
       isDestroyed = true
     },
 
