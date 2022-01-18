@@ -3,6 +3,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const fs = require('fs')
 
 const isDev = process.env.NODE_ENV === "development"
 const isProd = !isDev
@@ -20,6 +21,32 @@ const PATHS = {
   src: path.join(__dirname, "./src"),
   dist: path.join(__dirname, "./dist"),
 }
+
+const PAGES_DIR = `${PATHS.src}/ui-kit/pages/`
+const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
+
+const plugins = () => {
+  const base = [
+    new CleanWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: `${PATHS.src}/favicon.ico`,
+            to: PATHS.dist,
+        },
+      ],
+    }),
+    new MiniCssExtractPlugin({
+      filename: filename("css"),
+    }),
+    ...PAGES.map(page => new HTMLWebpackPlugin({
+      template: `${PAGES_DIR}/${page}`,
+      filename: `./${page.replace(/\.pug/,'.html')}`
+    }))
+  ]
+
+  return base;
+};
 
 module.exports = {
   context: PATHS.src,
@@ -41,24 +68,7 @@ module.exports = {
       chunks: "all"
     },
   },
-  plugins:
-    [
-      new HTMLWebpackPlugin({
-        template: "./index.html"
-      }),
-      new CleanWebpackPlugin(),
-      new CopyPlugin({
-        patterns: [
-          {
-            from: `${PATHS.src}/favicon.ico`,
-            to: PATHS.dist,
-          },
-        ],
-      }),
-      new MiniCssExtractPlugin({
-        filename: filename("css"),
-      })
-    ],
+  plugins: plugins(),
   module: {
     rules:
       [
@@ -111,6 +121,10 @@ module.exports = {
               plugins: ['@babel/plugin-proposal-class-properties'],
             },
           },
+        },
+        {
+          test: /\.pug$/,
+          use: "pug-loader",
         },
       ],
   },
