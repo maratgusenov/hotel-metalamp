@@ -2,7 +2,6 @@
   "name": "my-web",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "set NODE_ENV=development&&webpack serve --open",
     "dev": "set NODE_ENV=development&&webpack",
@@ -37,7 +36,7 @@
     "postcss": "^8.4.4",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.0.1",
-    "pug": "^3.0.2",
+    "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
     "sass": "^1.44.0",
     "sass-loader": "^12.3.0",

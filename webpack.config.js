@@ -17,13 +17,20 @@ if (mode = isProd) {
 }
 console.log(mode + " mode")
 
+let entryName = {};
+
+function entryPoints(page) {
+  entryName[page] = `./pages/${page}`;
+}
+
 const PATHS = {
   src: path.join(__dirname, "./src"),
   dist: path.join(__dirname, "./dist"),
 }
 
-const PAGES_DIR = `${PATHS.src}/ui-kit/pages/`
-const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
+const PAGES_DIR = `${PATHS.src}/pages/.`
+const PAGES = fs
+  .readdirSync(PAGES_DIR);
 
 const plugins = () => {
   const base = [
@@ -31,30 +38,30 @@ const plugins = () => {
     new CopyPlugin({
       patterns: [
         {
-          from: `${PATHS.src}/favicon.ico`,
-            to: PATHS.dist,
+          from: `${PATHS.src}/assets/img`,
+          to: `${PATHS.dist}/img`,
         },
       ],
     }),
     new MiniCssExtractPlugin({
       filename: filename("css"),
     }),
-    ...PAGES.map(page => new HTMLWebpackPlugin({
-      template: `${PAGES_DIR}/${page}`,
-      filename: `./${page.replace(/\.pug/,'.html')}`
-    }))
-  ]
-
+    ...PAGES.map((page) => {
+      entryPoints(page);
+      return new HTMLWebpackPlugin({
+        template: `./pages/${page}/${page}.pug`,
+        filename: `./${page}.html`,
+        chunks: [`${page}`],
+      });
+    }),
+  ];
   return base;
 };
 
 module.exports = {
   context: PATHS.src,
   mode: mode,
-  entry: {
-    main: ["@babel/polyfill", "./index.js"],
-    analytics: "./analytics.js",
-  },
+  entry: entryName,
   output: {
     filename: filename("js"),
     path: PATHS.dist,
@@ -106,10 +113,6 @@ module.exports = {
         {
           test: /\.(woff|woff2|eot|ttf|otf)$/i,
           type: 'asset/resource',
-        },
-        {
-          test: /\.xml$/,
-          type: "asset/resource",
         },
         {
           test: /\.m?js$/,
