@@ -1,8 +1,12 @@
-extends ../../layouts/main
-include ../../components/colors/colors
+extends ../../layouts/main/main
+include ../../components/color/color
+include ../../components/type/type
 
 block variables
   - var title = "colors and types";
   - var discription = "colors and fonts";
 
-  +colors
+  body.container
+    .wrapper
+      +colors
+      +types
