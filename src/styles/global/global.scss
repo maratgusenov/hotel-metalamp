@@ -1,0 +1,40 @@
+@import "./veriables.scss";
+@import "./fonts.scss";
+
+@mixin font-bold(
+  $fs: $body,
+  $cl: $dark-shade-100,
+  $lh: normal,
+  $fstl: normal
+) {
+  font-family: 'Montserrat-bold';
+  font-size: $fs;
+  line-height: $lh;
+  color: $cl;
+  font-style: $fstl;
+}
+
+@mixin font-normal(
+  $fs: $body,
+  $cl: $dark-shade-100,
+  $lh: normal,
+  $fstl: normal
+) {
+  font-family: 'Montserrat-normal';
+  font-size: $fs;
+  line-height: $lh;
+  color: $cl;
+  font-style: $fstl;
+}
+
+*, *:before, *:after {
+  box-sizing: inherint;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 30px 30px 0;
+}

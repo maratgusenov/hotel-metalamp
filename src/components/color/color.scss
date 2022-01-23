@@ -1,5 +1,4 @@
-@import "../../styles/global/colors.scss";
-@import "../../styles/global/fonts.scss";
+@import "../../styles/global/veriables.scss";
 
 @mixin box($color) {
   background: $color;

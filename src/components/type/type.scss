@@ -1,33 +1,30 @@
-@import "../../styles/global/fonts.scss";
-
-@mixin text($weight, $font) {
-  font-size: $weight;
-  font-family: $font;
-}
+@import "../../styles/global/global.scss";
+@import "../../styles/global/veriables.scss";
 
 .type {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   &__text {
     display: flex;
     display: row;
     &_size_h1 {
-      @include text(24px, Montserrat-Bond)
+      @include font-bold($h1)
     }
     &_size_h2 {
-      @include text(19px, Montserrat-Bond)
+      @include font-bold($h2)
     }
     &_size_h3 {
-      @include text(12px, Montserrat-Bond)
+      @include font-bold($h3)
     }
     &_size_body {
-      @include text(14px, Montserrat-Regular)
+      @include font-normal($body,$dark-shade-75)
     }
   }
   &__tag {
-    color: black
+    color: $dark-shade-25;
+    font-weight: normal;
   }
   &__task {
-    color: red
   }
 }
