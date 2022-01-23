@@ -1,0 +1,9 @@
+@import "./includes.scss";
+
+@include font-face('Montserrat-normal', 'Montserrat-regular', normal);
+@include font-face('Montserrat-bold', 'Montserrat-bold', bold);
+
+$h1: 24px;
+$h2: 19px;
+$h3: 12px;
+$body: 14px;

@@ -1,4 +1,5 @@
 @import "../../styles/global/colors.scss";
+@import "../../styles/global/fonts.scss";
 
 @mixin box($color) {
   background: $color;
@@ -11,6 +12,10 @@
   display: flex;
   flex-direction: column;
   &__case {
+    display: flex;
+    display: row;
+  }
+  &__name {
     display: flex;
     display: row;
   }

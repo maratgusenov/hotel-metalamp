@@ -1,5 +1,8 @@
-@mixin text($size) {
-  font-size: $size;
+@import "../../styles/global/fonts.scss";
+
+@mixin text($weight, $font) {
+  font-size: $weight;
+  font-family: $font;
 }
 
 .type {
@@ -9,16 +12,16 @@
     display: flex;
     display: row;
     &_size_h1 {
-      @include text(24px)
+      @include text(24px, Montserrat-Bond)
     }
     &_size_h2 {
-      @include text(19px)
+      @include text(19px, Montserrat-Bond)
     }
     &_size_h3 {
-      @include text(12px)
+      @include text(12px, Montserrat-Bond)
     }
     &_size_body {
-      @include text(14px)
+      @include text(14px, Montserrat-Regular)
     }
   }
   &__tag {
