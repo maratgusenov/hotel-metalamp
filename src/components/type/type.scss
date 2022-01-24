@@ -4,7 +4,8 @@
 .type {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
+  max-width: 436px;
   &__text {
     display: flex;
     display: row;
@@ -23,8 +24,12 @@
   }
   &__tag {
     color: $dark-shade-25;
-    font-weight: normal;
+    text-align: right;
+    min-width: 37px;
   }
   &__task {
+    margin-left: 30px;
+    line-height: 24px;
+    text-align: left;
   }
 }

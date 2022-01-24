@@ -1,22 +1,32 @@
 @import "../../styles/global/veriables.scss";
+@import "../../styles/global/global.scss";
 
 @mixin box($color) {
   background: $color;
   width: 70px;
   height: 70px;
-  margin: 0 30px 20px 0;
+  margin-right: 40px;
+  gap: 20px;
 }
 
 .color {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   &__case {
     display: flex;
     display: row;
   }
   &__name {
+    @include font-bold($h2);
+  }
+  &__code {
+    @include font-normal($h2);
+  }
+  &__discription {
     display: flex;
-    display: row;
+    flex-direction: column;
+    justify-content: center;
   }
   &__box {
       &_dark-shade-100 {
