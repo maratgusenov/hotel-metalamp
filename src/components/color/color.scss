@@ -1,22 +1,12 @@
 @import "../../styles/global/veriables.scss";
 @import "../../styles/global/global.scss";
 
-@mixin box($color) {
-  background: $color;
-  width: 70px;
-  height: 70px;
-  margin-right: 40px;
-  gap: 20px;
-}
+
 
 .color {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  &__case {
-    display: flex;
-    display: row;
-  }
+  display: row;
+
   &__name {
     @include font-bold($h2);
   }
@@ -28,27 +18,11 @@
     flex-direction: column;
     justify-content: center;
   }
-  &__box {
-      &_dark-shade-100 {
-      @include box($dark-shade-100);
-      }
-      &_dark-shade-75 {
-        @include box($dark-shade-75);
-      }
-      &_dark-shade-50 {
-        @include box($dark-shade-50);
-      }
-      &_dark-shade-25 {
-        @include box($dark-shade-25);;
-      }
-      &_dark-shade-05 {
-        @include box($dark-shade-05);;
-      }
-      &_purple {
-        @include box($purple);
-      }
-      &_green {
-        @include box($green);
-      }
+  &__box {  
+    width: 70px;
+    height: 70px;
+    margin-right: 40px;
+    gap: 20px;
+    border-radius: 10%;
   }
 }

@@ -1,27 +1,23 @@
 @import "../../styles/global/global.scss";
 @import "../../styles/global/veriables.scss";
 
-.type {
+.font {
   display: flex;
-  flex-direction: column;
-  gap: 50px;
-  max-width: 436px;
-  &__text {
-    display: flex;
-    display: row;
-    &_size_h1 {
-      @include font-bold($h1)
-    }
-    &_size_h2 {
-      @include font-bold($h2)
-    }
-    &_size_h3 {
-      @include font-bold($h3)
-    }
-    &_size_body {
-      @include font-normal($body,$dark-shade-75)
-    }
+  display: row;
+
+  &_size_h1 {
+    @include font-bold($h1)
   }
+  &_size_h2 {
+    @include font-bold($h2)
+  }
+  &_size_h3 {
+    @include font-bold($h3)
+  }
+  &_size_body {
+    @include font-normal($body,$dark-shade-75)
+  }
+  
   &__tag {
     color: $dark-shade-25;
     text-align: right;

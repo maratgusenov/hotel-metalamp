@@ -1,37 +1,6 @@
-mixin colors
-  .color
-    .color__case
-      .color__box_dark-shade-100
+mixin colors({code , name , opacity = 1})
+    .color
+      .color__box(style={"background-color":code, opacity})
       .color__discription
-        .color__name Dark-shade-100
-        .color__code #1F2041
-    .color__case
-      .color__box_dark-shade-75
-      .color__discription
-        .color__name Dark-shade-75
-        .color__code #1F2041
-    .color__case
-      .color__box_dark-shade-50
-      .color__discription
-        .color__name Dark-shade-50
-        .color__code #1F2041
-    .color__case
-      .color__box_dark-shade-25
-      .color__discription
-        .color__name Dark-shade-25
-        .color__code #1F2041
-    .color__case
-      .color__box_dark-shade-05
-      .color__discription
-        .color__name Dark-shade-05
-        .color__code #1F2041
-    .color__case
-      .color__box_purple
-      .color__discription
-        .color__name Purple
-        .color__code #BC9CFF
-    .color__case
-      .color__box_green
-      .color__discription
-        .color__name Green
-        .color__code #6FCF97
+        .color__name= name
+        .color__code= code

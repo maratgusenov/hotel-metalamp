@@ -3,8 +3,19 @@
 @import '../../layouts/main/main.scss';
 @import '../../styles/global/global.scss';
 
-.wrapper {
+.content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  &__colors {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__types {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 436px;
+  }
 }
