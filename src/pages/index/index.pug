@@ -1,4 +1,5 @@
 extends ../../layouts/main/main
+include ../../components/menu/menu
 
 block variables
   - var title = "webpack";
@@ -7,4 +8,9 @@ block variables
   - var background = true;
 
 block content
-  a(class="color__box_dark-shade-100" href="./colors_and_types.html") colors_and_types
+  - const { menu } = require("./index.json")
+
+  .menu 
+    .menu__nav
+      each items in menu
+        +menu(items)

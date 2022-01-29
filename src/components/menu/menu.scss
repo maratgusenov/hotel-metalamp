@@ -1,0 +1,16 @@
+@import "../../styles/global/veriables.scss";
+@import "../../styles/global/global.scss";
+
+.button {
+  @include font-normal($h2);
+  text-decoration:none;
+  position: relative;
+  &:hover:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0px;
+    background-color: $dark-shade-75;
+  }
+}

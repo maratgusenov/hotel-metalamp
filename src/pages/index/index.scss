@@ -1,0 +1,16 @@
+@import '../../components/menu/menu.scss';
+@import '../../styles/global/global.scss';
+@import '../../styles/global/veriables.scss';
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  &__nav {
+    display: flex;
+    background-color: rgb(217, 181, 150, 30%);
+    padding: 20px 50px 20px 50px;
+    gap: 30px;
+    box-shadow: 0 0 10px $dark-shade-50;
+  }
+}
