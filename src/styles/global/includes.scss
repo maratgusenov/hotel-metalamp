@@ -8,3 +8,55 @@
     font-display: swap;
   }
 };
+
+@mixin font-bold(
+  $fs: $body,
+  $cl: $dark-shade-100,
+  $lh: normal,
+  $fstl: normal
+  ) 
+{
+  font-family: 'Montserrat-bold';
+  font-size: $fs;
+  line-height: $lh;
+  color: $cl;
+  font-style: $fstl;
+}
+
+@mixin font-normal(
+  $fs: $body,
+  $cl: $dark-shade-100,
+  $lh: normal,
+  $fstl: normal
+) {
+  font-family: 'Montserrat-normal';
+  font-size: $fs;
+  line-height: $lh;
+  color: $cl;
+  font-style: $fstl;
+}
+
+
+@mixin media-xxl {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin media-xxl {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-xxl {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin media-xxl {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}

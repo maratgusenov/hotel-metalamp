@@ -1,0 +1,13 @@
+extends ../../layouts/main/main
+include ../../components/nav/nav
+
+block variables
+  - var title = "Header and footer";
+  - var discription = "Header&Footer page";
+  - var logo = "logo-grey.svg";
+  - var background = true;
+
+block content
+  - const { header } = require('./header_and_footer.json')
+  
+    +nav(header)

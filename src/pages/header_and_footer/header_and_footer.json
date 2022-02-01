@@ -1,0 +1,27 @@
+{
+  "header": {
+    "items": [
+      {
+        "link": "./index.html",
+        "title": "О нас"
+      },
+      {
+        "link": "./index.html",
+        "title": "Услуги"
+      },
+      {
+        "link": "./index.html",
+        "title": "Вакансии"
+      },
+      {
+        "link": "./index.html",
+        "title": "Новости"
+      },
+      {
+        "link": "./index.html",
+        "title": "Соглашения"
+      }
+    ]
+  }
+  
+}

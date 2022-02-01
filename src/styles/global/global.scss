@@ -1,8 +1,12 @@
 @import "./veriables.scss";
 @import "./fonts.scss";
 
-*, *:before, *:after {
-  box-sizing: inherint;
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }
 
 html {
@@ -11,58 +15,4 @@ html {
   font-family: Montserrat-normal;
   font-style: normal;
   background-color: white;
-}
-
-@mixin font-bold(
-  $fs: $body,
-  $cl: $dark-shade-100,
-  $lh: normal,
-  $fstl: normal
-) {
-  font-family: 'Montserrat-bold';
-  font-size: $fs;
-  line-height: $lh;
-  color: $cl;
-  font-style: $fstl;
-}
-
-@mixin font-normal(
-  $fs: $body,
-  $cl: $dark-shade-100,
-  $lh: normal,
-  $fstl: normal
-) {
-  font-family: 'Montserrat-normal';
-  font-size: $fs;
-  line-height: $lh;
-  color: $cl;
-  font-style: $fstl;
-}
-
-.container {
-  padding: 30px 30px 0;
-}
-
-@mixin media-xxl {
-  @media (max-width: 1400px) {
-    @content;
-  }
-}
-
-@mixin media-xxl {
-  @media (max-width: 1200px) {
-    @content;
-  }
-}
-
-@mixin media-xxl {
-  @media (max-width: 992px) {
-    @content;
-  }
-}
-
-@mixin media-xxl {
-  @media (max-width: 1400px) {
-    @content;
-  }
 }

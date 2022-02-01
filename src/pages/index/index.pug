@@ -5,12 +5,9 @@ block variables
   - var title = "webpack";
   - var discription = "Webpack course";
   - var logo = "logo-grey.svg";
-  - var background = true;
+  - var background = false;
 
 block content
   - const { menu } = require("./index.json")
 
-  .menu 
-    .menu__nav
-      each items in menu
-        +menu(items)
+  +menu(menu)

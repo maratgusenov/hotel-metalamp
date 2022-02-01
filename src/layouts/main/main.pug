@@ -4,8 +4,9 @@ doctype html
 html(lang='en')
   head
     meta(charset='UTF-8')
-    title #{title}
     meta(name="discription", content=discription)
+    meta(name="viewport", content="initial-scale=1.0, width=device-width")
+    title #{title}
   body(class=background ? 'main main__background_grey' : 'main')
     img(src="img/"+ logo alt="logo")
     block content
