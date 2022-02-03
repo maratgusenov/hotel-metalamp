@@ -11,5 +11,6 @@ mixin nav({items, auth, account})
           )
             a.nav__link(href=link || "./index.html")= title
       if auth 
-        li.nav__item
-          +button({auth})
+        each item in auth
+          li.nav__item
+            +button(item)
