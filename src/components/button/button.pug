@@ -2,6 +2,7 @@ mixin button({auth})
   each item in auth
     - const { link, title, border, theme } = item
       a.button(
-        class=border ? `button_border-${border.color}` : ""
-        class=theme ? `button_theme-${theme.color}` : ""
-        href=link)= title
+        class=border ? "button__border_colored" : ""
+        class=theme ? "button__theme_colored" : ""
+        href=link)
+        span(class=theme ? "button__text_white" : "button__text_inherit")=title

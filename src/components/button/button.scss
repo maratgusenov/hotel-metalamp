@@ -2,11 +2,25 @@
 @import "../../styles/global/veriables.scss";
 
 .button {
-  border: 3px solid $purple;
-  border-radius: 22px;
-  color: white;
-  text-transform: uppercase;
-  background-color: $purple;
+  padding: 9px 20px 10px 20px;
+  height: 34px;
   text-decoration: none;
-  @include font-normal($h3)
+  
+  &__border_colored {
+    border: 2px solid $purple;
+    border-radius: 22px;
+    color: $purple;
+  }
+  &__theme_colored {
+    background-color: $purple;
+    border-radius: 22px;
+  }
+  &__text_white {
+    @include font-bold(h3, white);
+    text-transform: uppercase;
+  }
+  &__text_inherit {
+    @include font-bold(h3,inherit);
+    text-transform: uppercase;
+  }
 }

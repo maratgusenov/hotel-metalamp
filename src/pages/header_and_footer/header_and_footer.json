@@ -30,13 +30,12 @@
       {
         "link": "./index.html",
         "title": "Войти",
-        "border": {
-          "color": "purple"
-        }
+        "border": true
       },
       {
         "link": "./index.html",
-        "title": "Зарегистрироваться"
+        "title": "Зарегистрироваться",
+        "theme": true
       }
     ]
   }
