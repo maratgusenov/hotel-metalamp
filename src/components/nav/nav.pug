@@ -2,6 +2,9 @@ mixin nav({items})
   nav.nav
     ul.nav__list
       each item in items
-        - const { link, title } = item
-        li.nav__item
-          a(href=link)= title
+        - const { link, title, active, dropdown } = item
+        li.nav__item(
+          class = active ? "menu__item_active" : ""
+          class = dropdown ? "menu__item_dropdown" : ""
+        )
+          a.nav__link(href=link || "./index.html")= title
