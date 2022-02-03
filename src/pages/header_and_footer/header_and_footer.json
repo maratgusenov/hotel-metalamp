@@ -25,6 +25,19 @@
         "link": "./index.html",
         "title": "Соглашения"
       }
+    ],
+    "auth": [
+      {
+        "link": "./index.html",
+        "title": "Войти",
+        "border": {
+          "color": "purple"
+        }
+      },
+      {
+        "link": "./index.html",
+        "title": "Зарегистрироваться"
+      }
     ]
   }
 }

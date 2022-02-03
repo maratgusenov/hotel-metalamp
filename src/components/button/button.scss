@@ -1,0 +1,12 @@
+@import "../../styles/global/global.scss";
+@import "../../styles/global/veriables.scss";
+
+.button {
+  border: 3px solid $purple;
+  border-radius: 22px;
+  color: white;
+  text-transform: uppercase;
+  background-color: $purple;
+  text-decoration: none;
+  @include font-normal($h3)
+}

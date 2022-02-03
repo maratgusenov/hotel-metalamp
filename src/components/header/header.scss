@@ -1,9 +1,16 @@
+
 .header {
+  height: 70px;
+  background-color: white;
+  box-shadow: 0 0 5px rgb(31 32 65 / 50%);
+  margin-top: 55px;
   &__nav {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    background-color: white;
+  }
+  &__logo {
+    margin-top: 9px;
   }
 }

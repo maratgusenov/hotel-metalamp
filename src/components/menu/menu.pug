@@ -3,4 +3,4 @@ mixin menu({items})
     .menu__nav
       each item in items
         - const { link, title } = item
-        a(class= "menu__link" href=link)= title
+        a(class= "menu__link" href=link || "./index.html")= title
