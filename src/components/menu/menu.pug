@@ -1,7 +1,6 @@
 mixin menu({items})
-  nav.menu
-    ul.menu__list
+  .menu
+    .menu__nav
       each item in items
         - const { link, title } = item
-        li.menu__item
-          a(href=link)= title
+        a(class= "menu__link" href=link)= title

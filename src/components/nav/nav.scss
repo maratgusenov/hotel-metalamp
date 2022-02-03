@@ -1,6 +1,7 @@
 @import "../../styles/global/veriables.scss";
 
-.button {
+.nav
+  &__item {
   @include font-normal($h2);
   text-decoration:none;
   position: relative;

@@ -1,5 +1,5 @@
 extends ../../layouts/main/main
-include ../../components/nav/nav
+include ../../components/header/header
 
 block variables
   - var title = "Header and footer";
@@ -10,4 +10,4 @@ block variables
 block content
   - const { header } = require('./header_and_footer.json')
   
-    +nav(header)
+    +header(header)

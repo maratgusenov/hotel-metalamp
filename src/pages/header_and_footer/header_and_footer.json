@@ -1,5 +1,9 @@
 {
   "header": {
+    "logo": {
+      "src": "img/logo-toxin.svg",
+      "href": "./index.html"
+    },
     "items": [
       {
         "link": "./index.html",
@@ -23,5 +27,4 @@
       }
     ]
   }
-  
 }
