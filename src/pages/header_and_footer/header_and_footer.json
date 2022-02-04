@@ -7,7 +7,8 @@
     "items": [
       {
         "link": "./index.html",
-        "title": "О нас"
+        "title": "О нас",
+        "active": "true"
       },
       {
         "link": "./index.html",
@@ -30,7 +31,7 @@
       {
         "link": "./index.html",
         "title": "Войти",
-        "border": true
+        "theme": false
       },
       {
         "link": "./index.html",

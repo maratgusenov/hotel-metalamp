@@ -1,6 +1,22 @@
-mixin button({link, title, border, theme})
-  a.button(
-    class=border ? "button__border_colored" : ""
-    class=theme ? "button__theme_colored" : ""
-    href=link)
-    span(class = theme ? "button__text_white" : border ? "button__text_inherit" : "button__text_default-color")=title
+mixin button({link, title, theme, long, type})
+  - 
+    let classArray = []
+
+    if (theme) classArray.push("button_theme-filled") 
+      else classArray.push("button_theme-bordered")
+
+    if (long) classArray.push("button_size-long") 
+      else classArray.push("button_size-short")
+
+  if link
+    a.button(class=classArray href=link)
+      span( class = theme ? "button__text-white" 
+      : "button__text-inherit ")=title
+      if long
+        span.button__arrow 
+  else 
+    button.button(class=classArray type=type)
+      span( class = theme ? "button__text-white" 
+      : "button__text-inherit ")=title
+      if long
+        span.button__arrow 

@@ -7,7 +7,7 @@ mixin nav({items, auth, account})
         each item in items
           - const { link, title, active } = item
           li.nav__item(
-            class = active ? "menu__item_active" : ""
+            class = active ? "nav__item_active" : ""
           )
             a.nav__link(href=link || "./index.html")= title
       if auth 
