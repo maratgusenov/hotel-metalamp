@@ -8,6 +8,7 @@ block variables
   - var background = true;
 
 block content
-  - const { header } = require('./header_and_footer.json')
-  
+  - const { header, headerAccount } = require('./header_and_footer.json')
+   .header-footer
     +header(header)
+    +header(headerAccount)

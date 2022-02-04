@@ -2,13 +2,17 @@
 @import "../../styles/global/veriables.scss";
 
 a.button {
-  min-height: 34px;
-  padding: 9px 20px 10px 20px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  background-origin: border-box;
+  padding: 9px 20px 10px 19px;
 }
 
 .button {
   text-decoration: none;
-  position: relative;
+  @include font-bold($h3,$purple);
+  text-transform: uppercase;
   &_theme {
     &-filled {
       background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -22,15 +26,15 @@ a.button {
   }
   &_size {
     &-short {
-
+      
     }
   }
-  &__text_white {
-    @include font-bold($h3, white);
-    text-transform: uppercase;
-  }
-  &__text_inherit {
-    @include font-bold($h3,inherit);
-    text-transform: uppercase;
+  &_text {
+    &-white {
+      color: #fff;
+    }
+    &-inherit {
+      color: inherit;
+    }
   }
 }

@@ -39,5 +39,38 @@
         "theme": true
       }
     ]
+  },
+  "headerAccount": {
+    "logo": {
+      "src": "img/logo-toxin.svg",
+      "href": "./index.html"
+    },
+    "items": [
+      {
+        "link": "./index.html",
+        "title": "О нас",
+        "active": "true"
+      },
+      {
+        "link": "./index.html",
+        "title": "Услуги"
+      },
+      {
+        "link": "./index.html",
+        "title": "Вакансии"
+      },
+      {
+        "link": "./index.html",
+        "title": "Новости"
+      },
+      {
+        "link": "./index.html",
+        "title": "Соглашения"
+      }
+    ],
+    "account": {
+      "href": "./index.html",
+      "name": "Юлий Цезарь"
+    }
   }
 }

@@ -10,13 +10,13 @@ mixin button({link, title, theme, long, type})
 
   if link
     a.button(class=classArray href=link)
-      span( class = theme ? "button__text-white" 
+      span( class = theme ? "button_text-white" 
       : "button__text-inherit ")=title
       if long
         span.button__arrow 
   else 
     button.button(class=classArray type=type)
-      span( class = theme ? "button__text-white" 
-      : "button__text-inherit ")=title
+      span( class = theme ? "button_text-white" 
+      : "button_text-inherit ")=title
       if long
         span.button__arrow 

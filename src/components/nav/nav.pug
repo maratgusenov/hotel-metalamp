@@ -14,3 +14,7 @@ mixin nav({items, auth, account})
         each item in auth
           li.nav__item
             +button(item)
+      if account
+        li.nav__acc
+          a.nav__link(href=account.href || "./index.html")=account.name
+        

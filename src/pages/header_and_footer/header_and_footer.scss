@@ -3,3 +3,10 @@
 @import '../../components/nav/nav.scss';
 @import '../../styles/global/global.scss';
 @import '../../styles/global/includes.scss';
+
+.header-footer {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 40px;
+  padding-top: 55px;
+}
