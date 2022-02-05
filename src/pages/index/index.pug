@@ -1,5 +1,5 @@
 extends ../../layouts/main/main
-include ../../components/menu/menu
+include ../../components/index/index
 
 block variables
   - var title = "webpack";
@@ -8,6 +8,6 @@ block variables
   - var background = false;
 
 block content
-  - const { menu } = require("./index.json")
+  - const { index } = require("./index.json")
 
-  +menu(menu)
+  +index(index)

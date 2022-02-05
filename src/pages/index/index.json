@@ -1,15 +1,14 @@
 {
-  "menu":
-    {
-      "items": [
-        {
-          "link": "./colors_and_types.html",
-          "title": "colors and types"
-        },
-        {
-          "link": "./header_and_footer.html",
-          "title": "header and footer"
-        }
-      ]
-    }
+  "index": {
+    "items": [
+      {
+        "link": "./colors_and_types.html",
+        "title": "colors and types"
+      },
+      {
+        "link": "./header_and_footer.html",
+        "title": "header and footer"
+      }
+    ]
+  }
 }

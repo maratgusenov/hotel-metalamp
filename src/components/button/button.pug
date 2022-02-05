@@ -1,4 +1,4 @@
-mixin button({link, title, theme, long, type})
+mixin button({href, item, theme, long, type})
   - 
     let classArray = []
 
@@ -8,15 +8,15 @@ mixin button({link, title, theme, long, type})
     if (long) classArray.push("button_size-long") 
       else classArray.push("button_size-short")
 
-  if link
-    a.button(class=classArray href=link)
+  if href
+    a.button(class=classArray href=href)
       span( class = theme ? "button_text-white" 
-      : "button__text-inherit ")=title
+      : "button__text-inherit ")=item
       if long
         span.button__arrow 
   else 
     button.button(class=classArray type=type)
       span( class = theme ? "button_text-white" 
-      : "button_text-inherit ")=title
+      : "button_text-inherit ")=item
       if long
         span.button__arrow 

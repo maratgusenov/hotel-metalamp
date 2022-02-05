@@ -4,38 +4,38 @@
       "src": "img/logo-toxin.svg",
       "href": "./index.html"
     },
-    "items": [
+    "rows": [
       {
-        "link": "./index.html",
-        "title": "О нас",
+        "href": "./index.html",
+        "item": "О нас",
         "active": "true"
       },
       {
-        "link": "./index.html",
-        "title": "Услуги"
+        "href": "./index.html",
+        "item": "Услуги"
       },
       {
-        "link": "./index.html",
-        "title": "Вакансии"
+        "href": "./index.html",
+        "item": "Вакансии"
       },
       {
-        "link": "./index.html",
-        "title": "Новости"
+        "href": "./index.html",
+        "item": "Новости"
       },
       {
-        "link": "./index.html",
-        "title": "Соглашения"
+        "href": "./index.html",
+        "item": "Соглашения"
       }
     ],
-    "auth": [
+  "auth": [
       {
-        "link": "./index.html",
-        "title": "Войти",
+        "href": "./index.html",
+        "item": "Войти",
         "theme": false
       },
       {
-        "link": "./index.html",
-        "title": "Зарегистрироваться",
+        "href": "./index.html",
+        "item": "Зарегистрироваться",
         "theme": true
       }
     ]
@@ -45,32 +45,99 @@
       "src": "img/logo-toxin.svg",
       "href": "./index.html"
     },
-    "items": [
+    "rows": [
       {
         "link": "./index.html",
-        "title": "О нас",
+        "item": "О нас",
         "active": "true"
       },
       {
         "link": "./index.html",
-        "title": "Услуги"
+        "item": "Услуги"
       },
       {
         "link": "./index.html",
-        "title": "Вакансии"
+        "item": "Вакансии"
       },
       {
         "link": "./index.html",
-        "title": "Новости"
+        "item": "Новости"
       },
       {
         "link": "./index.html",
-        "title": "Соглашения"
+        "item": "Соглашения"
       }
     ],
     "account": {
       "href": "./index.html",
       "name": "Юлий Цезарь"
     }
+  },
+  "footer": {
+    "logo": {
+      "src": "img/logo-toxin.svg",
+      "href": "./index.html"
+    },
+    "columns": [
+      {
+        "title": "Навигация",
+        "list": [ 
+          {
+            "href": "./index.html",
+            "item": "О нас"
+          },
+          {
+            "href": "./index.html",
+            "item": "Новости"
+          },
+          {
+            "href": "./index.html",
+            "item": "Служба поддержки"
+          },
+          {
+            "href": "./index.html",
+            "item": "Услуги"
+          } 
+        ] 
+      },
+      {
+        "title": "О нас",
+        "list": [ 
+          {
+            "href": "./index.html",
+            "item": "О сервисе"
+          },
+          {
+            "href": "./index.html",
+            "item": "Наша команда"
+          },
+          {
+            "href": "./index.html",
+            "item": "Вакансии"
+          },
+          {
+            "href": "./index.html",
+            "item": "Инвесторы"
+          } 
+        ] 
+      },
+      {
+        "title": "Служба поддержки",
+        "list": [ 
+          {
+            "href": "./index.html",
+            "item": "Соглашения"
+          },
+          {
+            "href": "./index.html",
+            "item": "Сообщества"
+          },
+          {
+            "href": "./index.html",
+            "item": "Связь с нами"
+          }
+        ] 
+      }
+    ]
   }
 }

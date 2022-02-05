@@ -1,4 +1,5 @@
 extends ../../layouts/main/main
+include ../../components/footer/footer
 include ../../components/header/header
 
 block variables
@@ -8,7 +9,8 @@ block variables
   - var background = true;
 
 block content
-  - const { header, headerAccount } = require('./header_and_footer.json')
-   .header-footer
+  - const { header, headerAccount, footer } = require('./header_and_footer.json')
+  .header-footer
     +header(header)
     +header(headerAccount)
+    +footer(footer)  

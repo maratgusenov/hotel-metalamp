@@ -1,6 +1,37 @@
-mixin menu({items})
-  .menu
-    .menu__nav
-      each item in items
-        - const { link, title } = item
-        a(class= "menu__link" href=link || "./index.html")= title
+include ../button/button
+
+mixin menu({columns, rows, auth, account})
+  nav.menu
+    ul.menu__list
+      if rows
+        each row in rows
+          - const { href, item, active } = row
+          li.menu__item(
+            class = active ? "nav__item_active" : ""
+          )
+            a.menu__link(href=href || "./index.html")= item
+
+      if columns
+        each column in columns
+          - const { title, list } = column
+          li.menu__item
+            ul.menu__columns
+              li.menu__item
+                div.menu__title= title
+              each link in list 
+                - const { href, item, text } = link
+                if href
+                  li.menu__item
+                    a.menu__link(href=href || "./index.html")= item
+                else 
+                  li.menu__item 
+                    div.menu__text=text
+      if auth 
+        each button in auth
+          li.menu__item
+            +button(button)
+
+      if account
+        li.menu__acc
+          a.menu__link(href=account.href || "./index.html")=account.name
+        

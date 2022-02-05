@@ -1,0 +1,6 @@
+mixin index({items})
+  .index
+    .index__nav
+      each item in items
+        - const { link, title } = item
+        a(class= "menu__link" href=link || "./index.html")= title

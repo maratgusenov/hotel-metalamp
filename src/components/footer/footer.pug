@@ -1,0 +1,9 @@
+include ../menu/menu
+
+mixin footer({columns, logo})
+  .footer
+    .footer__nav
+      .footer__logo
+        a.footer__logo-link(href=logo.href || "./index.html")
+          img.footer__logo-img(src=logo.src alt=logo.alt || "logo")
+      +menu({columns})

@@ -1,25 +1,39 @@
 @import "../../styles/global/veriables.scss";
-@import "../../styles/global/global.scss";
-
+@import "../button/button.scss";
 
 .menu {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  &__nav {
+  @include font-normal($body, $dark-shade-50);
+  &__columns {
     display: flex;
-    justify-content: center;
+    align-items: right;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+  }
+  &__list {
+    display: flex;
     align-items: center;
-    background-color: rgb(217, 181, 150, 30%);
-    padding: 20px 50px;
-    gap: 30px;
-    box-shadow: 0 0 10px $dark-shade-50;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+  }
+  &__title {
+    text-transform: uppercase;
+    @include font-bold($h3);
+    padding-bottom: 20px;
+  }
+  &__item {
+    list-style: none;
+    
+    &_active {
+      @include font-bold($body)
+    }
   }
   &__link {
-    @include font-normal($h2);
     text-decoration:none;
     position: relative;
+    color: inherit;
     &:hover:before {
       position: absolute;
       content: "";
@@ -28,5 +42,10 @@
       bottom: 0px;
       background-color: $dark-shade-75;
     }
+  }
+  &__acc {
+    border-left: 1px solid $dark-shade-50;
+    padding-left: 20px;
+    list-style: none;
   }
 }
