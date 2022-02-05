@@ -11,8 +11,6 @@ body {
 
 html {
   box-sizing: border-box;
-  line-height: 24px;
-  font-family: Montserrat-normal;
-  font-style: normal;
+  @include font-normal($body);
   background-color: white;
 }
