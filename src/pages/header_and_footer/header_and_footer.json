@@ -4,38 +4,38 @@
       "src": "img/logo-toxin.svg",
       "href": "./index.html"
     },
-    "rows": [
+    "items": [
       {
         "href": "./index.html",
-        "item": "О нас",
+        "title": "О нас",
         "active": "true"
       },
       {
         "href": "./index.html",
-        "item": "Услуги"
+        "title": "Услуги"
       },
       {
         "href": "./index.html",
-        "item": "Вакансии"
+        "title": "Вакансии"
       },
       {
         "href": "./index.html",
-        "item": "Новости"
+        "title": "Новости"
       },
       {
         "href": "./index.html",
-        "item": "Соглашения"
+        "title": "Соглашения"
       }
     ],
-  "auth": [
+    "auth": [
       {
         "href": "./index.html",
-        "item": "Войти",
+        "title": "Войти",
         "theme": false
       },
       {
         "href": "./index.html",
-        "item": "Зарегистрироваться",
+        "title": "Зарегистрироваться",
         "theme": true
       }
     ]
@@ -45,27 +45,27 @@
       "src": "img/logo-toxin.svg",
       "href": "./index.html"
     },
-    "rows": [
+    "items": [
       {
         "link": "./index.html",
-        "item": "О нас",
+        "title": "О нас",
         "active": "true"
       },
       {
         "link": "./index.html",
-        "item": "Услуги"
+        "title": "Услуги"
       },
       {
         "link": "./index.html",
-        "item": "Вакансии"
+        "title": "Вакансии"
       },
       {
         "link": "./index.html",
-        "item": "Новости"
+        "title": "Новости"
       },
       {
         "link": "./index.html",
-        "item": "Соглашения"
+        "title": "Соглашения"
       }
     ],
     "account": {
@@ -78,10 +78,10 @@
       "src": "img/logo-toxin.svg",
       "href": "./index.html"
     },
-    "columns": [
+    "items": [
       {
         "title": "Навигация",
-        "list": [ 
+        "list": [
           {
             "href": "./index.html",
             "item": "О нас"
@@ -97,12 +97,12 @@
           {
             "href": "./index.html",
             "item": "Услуги"
-          } 
-        ] 
+          }
+        ]
       },
       {
         "title": "О нас",
-        "list": [ 
+        "list": [
           {
             "href": "./index.html",
             "item": "О сервисе"
@@ -118,12 +118,12 @@
           {
             "href": "./index.html",
             "item": "Инвесторы"
-          } 
-        ] 
+          }
+        ]
       },
       {
         "title": "Служба поддержки",
-        "list": [ 
+        "list": [
           {
             "href": "./index.html",
             "item": "Соглашения"
@@ -136,8 +136,12 @@
             "href": "./index.html",
             "item": "Связь с нами"
           }
-        ] 
+        ]
       }
-    ]
+    ],
+    "subscribe": {
+      "title": "подписка",
+      "text": "Получайте специальные предложения и новости сервиса"
+    }
   }
 }

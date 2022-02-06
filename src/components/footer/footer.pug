@@ -1,10 +1,11 @@
-include ../nav/nav
+include ../footer-nav/footer-nav
+include ../footer-subscribe/footer-subscribe
 
-mixin footer({columns, logo})
+mixin footer({ logo, items, subscribe})
   .footer
-    .footer__nav
-      .footer__view
-        a.footer__logo-link(href=logo.href || "./index.html")
-          img.footer__logo-img(src=logo.src alt=logo.alt || "logo")
-        .footer__about Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-      +nav({columns})
+    .footer__view
+      a.footer__logo-link(href=logo.href || "./index.html")
+        img.footer__logo-img(src=logo.src alt=logo.alt || "logo")
+      .footer__about Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+    +footer-nav({items})
+    +footer-subsribe(subscribe)

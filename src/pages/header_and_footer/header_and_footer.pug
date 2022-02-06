@@ -1,6 +1,6 @@
 extends ../../layouts/main/main
-include ../../components/footer/footer
 include ../../components/header/header
+include ../../components/footer/footer
 
 block variables
   - var title = "Header and footer";
@@ -12,5 +12,5 @@ block content
   - const { header, headerAccount, footer } = require('./header_and_footer.json')
   .header-footer
     +header(header)
-    +header(headerAccount)
-    +footer(footer)  
+    +header(headerAccount) 
+    +footer(footer)
