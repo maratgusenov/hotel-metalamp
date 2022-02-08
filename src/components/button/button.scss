@@ -29,12 +29,12 @@ a.button {
       
     }
   }
-  &_text {
+  &_color {
     &-white {
       color: #fff;
     }
-    &-inherit {
-      color: inherit;
+    &-purple {
+      color: $purple;
     }
   }
 }

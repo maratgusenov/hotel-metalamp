@@ -12,6 +12,6 @@
     @include font-bold($h3);
   }
   &__text {
-    @include font-normal($body, $dark-shade-50, 18px);
+    @include font-normal($body, $dark-shade-75);
   }
 }
