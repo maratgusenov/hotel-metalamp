@@ -7,16 +7,19 @@
   box-shadow: 0 0 5px rgb(31 32 65 / 50%);
   padding: 100px 110px 0px;
   &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 35px;
     padding: 0 30px;
+    max-width: 1380px;
+    margin: 0 auto;
   }
   &__menu {
     display: flex;
     justify-content: space-between;
   }
   &__view {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    grid-column: span 3;
     gap: 20px;
     max-width: 260px;
   }

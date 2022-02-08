@@ -1,19 +1,15 @@
 @import "../button/button.scss";
 
 .footer-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  min-width: 550px;
-  @include font-normal($body, $dark-shade-50, 18px);
-  &__list {
+  grid-column: span 2;
   display: flex;
   align-items: right;
   flex-direction: column;
   margin: 0;
   padding: 0;
   gap: 20px;
-  }
+  @include font-normal($body, $dark-shade-50, 18px);
+
   &__title {
     text-transform: uppercase;
     @include font-bold($h3);
