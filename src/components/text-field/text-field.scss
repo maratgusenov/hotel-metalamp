@@ -1,0 +1,11 @@
+.text-field {
+  width: 100%;
+  &__mail {
+    min-height: 44px;
+    width: 100%;
+    ::first-letter {
+      text-transform: uppercase;
+      border-radius: 4px;
+    }
+  }
+}

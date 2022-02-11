@@ -1,4 +1,8 @@
-mixin footer-subsribe({title, text})
+include ../text-field/text-field
+
+mixin footer-subsribe({title, text, field})
   .footer-subscribe
     .footer-subscribe__title= title
     .footer-subscribe__text= text
+    if field 
+      +text-field(field)
