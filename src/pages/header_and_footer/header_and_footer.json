@@ -144,7 +144,10 @@
       "text": "Получайте специальные предложения и новости сервиса",
       "field": {
         "type": "email",
-        "text": "email"
+        "text": "email",
+        "submit": {
+          "name": "email"
+        }
       }
     }
   }

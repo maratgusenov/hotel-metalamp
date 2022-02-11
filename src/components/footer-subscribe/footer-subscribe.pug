@@ -1,8 +1,8 @@
-include ../text-field/text-field
+include ../field/field
 
 mixin footer-subsribe({title, text, field})
   .footer-subscribe
     .footer-subscribe__title= title
     .footer-subscribe__text= text
     if field 
-      +text-field(field)
+      +field(field)

@@ -1,0 +1,18 @@
+mixin field({title, type, text, submit})
+  form.field
+    if title 
+      .field__title=title 
+    .field__item
+      input.field__mail(
+        type=type
+        placeholder=text
+      )
+      if submit 
+        button.field__submit(type="submit" name=submit.name)
+          span.field__icon
+
+
+
+        
+
+    
