@@ -7,35 +7,35 @@
     "items": [
       {
         "href": "./index.html",
-        "title": "О нас",
+        "title": "о нас",
         "active": "true"
       },
       {
         "href": "./index.html",
-        "title": "Услуги"
+        "title": "услуги"
       },
       {
         "href": "./index.html",
-        "title": "Вакансии"
+        "title": "вакансии"
       },
       {
         "href": "./index.html",
-        "title": "Новости"
+        "title": "новости"
       },
       {
         "href": "./index.html",
-        "title": "Соглашения"
+        "title": "соглашения"
       }
     ],
     "auth": [
       {
         "href": "./index.html",
-        "title": "Войти",
+        "title": "войти",
         "theme": false
       },
       {
         "href": "./index.html",
-        "title": "Зарегистрироваться",
+        "title": "зарегистрироваться",
         "theme": true
       }
     ]
@@ -48,24 +48,24 @@
     "items": [
       {
         "link": "./index.html",
-        "title": "О нас",
+        "title": "о нас",
         "active": "true"
       },
       {
         "link": "./index.html",
-        "title": "Услуги"
+        "title": "услуги"
       },
       {
         "link": "./index.html",
-        "title": "Вакансии"
+        "title": "вакансии"
       },
       {
         "link": "./index.html",
-        "title": "Новости"
+        "title": "повости"
       },
       {
         "link": "./index.html",
-        "title": "Соглашения"
+        "title": "соглашения"
       }
     ],
     "account": {
@@ -80,68 +80,68 @@
     },
     "items": [
       {
-        "title": "Навигация",
+        "title": "навигация",
         "list": [
           {
             "href": "./index.html",
-            "item": "О нас"
+            "item": "о нас"
           },
           {
             "href": "./index.html",
-            "item": "Новости"
+            "item": "новости"
           },
           {
             "href": "./index.html",
-            "item": "Служба поддержки"
+            "item": "служба поддержки"
           },
           {
             "href": "./index.html",
-            "item": "Услуги"
+            "item": "услуги"
           }
         ]
       },
       {
-        "title": "О нас",
+        "title": "о нас",
         "list": [
           {
             "href": "./index.html",
-            "item": "О сервисе"
+            "item": "о сервисе"
           },
           {
             "href": "./index.html",
-            "item": "Наша команда"
+            "item": "наша команда"
           },
           {
             "href": "./index.html",
-            "item": "Вакансии"
+            "item": "вакансии"
           },
           {
             "href": "./index.html",
-            "item": "Инвесторы"
+            "item": "инвесторы"
           }
         ]
       },
       {
-        "title": "Служба поддержки",
+        "title": "служба поддержки",
         "list": [
           {
             "href": "./index.html",
-            "item": "Соглашения"
+            "item": "соглашения"
           },
           {
             "href": "./index.html",
-            "item": "Сообщества"
+            "item": "сообщества"
           },
           {
             "href": "./index.html",
-            "item": "Связь с нами"
+            "item": "связь с нами"
           }
         ]
       }
     ],
     "subscribe": {
       "title": "подписка",
-      "text": "Получайте специальные предложения и новости сервиса",
+      "text": "получайте специальные предложения и новости сервиса",
       "field": {
         "type": "email",
         "text": "email",

@@ -1,4 +1,47 @@
 @import "./includes.scss";
 
+@font-face {
+font-family: 'icon';
+src:  url('../../assets/fonts/icon.eot?sumeoz');
+src:  url('../../assets/fonts/icon.eot?sumeoz#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/icon-fonts.ttf?sumeoz') format('truetype'),
+    url('../../assets/fonts/icon.woff?sumeoz') format('woff'),
+    url('../../assets/fonts/icon.svg?sumeoz#icon') format('svg');
+font-weight: normal;
+font-style: normal;
+font-display: block;
+}
+
+[class^="_icon-"]::before, [class*=" _icon-"]::before {
+/* use !important to prevent issues with browser extensions that change fonts */
+font-family: 'icon' !important;
+speak: never;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+
+/* Better Font Rendering =========== */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+._icon-arrow:before {
+content: "\e900";
+}
+._icon-twit:before {
+content: "\e901";
+}
+._icon-fb:before {
+content: "\e902";
+}
+._icon-inst:before {
+content: "\e903";
+}
+._icon-like:before {
+content: "\e904";
+}
+
 @include font-face('Montserrat-normal', 'Montserrat-regular', normal);
 @include font-face('Montserrat-bold', 'Montserrat-bold', bold);

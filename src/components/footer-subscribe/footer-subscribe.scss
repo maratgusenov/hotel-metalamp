@@ -15,5 +15,8 @@
   }
   &__text {
     @include font-normal($body, $dark-shade-75);
+    &::first-letter {
+      text-transform: uppercase;
+    }
   }
 }

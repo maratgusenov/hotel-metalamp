@@ -19,6 +19,9 @@
     &_active {
       @include font-bold($body)
     }
+    &::first-letter {
+      text-transform: uppercase;
+    }
   }
   &__link {
     text-decoration:none;

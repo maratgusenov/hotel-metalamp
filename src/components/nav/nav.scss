@@ -26,6 +26,9 @@
     text-decoration:none;
     position: relative;
     color: inherit;
+    &:first-letter {
+      text-transform: uppercase;
+    }
     &:hover:before {
       position: absolute;
       content: "";
