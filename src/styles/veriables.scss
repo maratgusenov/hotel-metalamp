@@ -1,0 +1,34 @@
+$dark-shade-100: rgba(31, 32, 65, 1);
+$dark-shade-75: rgba(31, 32, 65, 0.75);;
+$dark-shade-50: rgba(31, 32, 65, 0.50);
+$dark-shade-25: rgba(31, 32, 65, 0.25);
+$dark-shade-05: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+
+$h1: 24px;
+$h2: 19px;
+$h3: 12px;
+$body: 14px;
+
+$arrow: "\e900";
+$twit: "\e901";
+$fb: "\e902";
+$inst: "\e903";
+$like: "\e904";
+
+._icon-arrow:before {
+  content: "\e900";
+}
+._icon-twit:before {
+  content: "\e901";
+}
+._icon-fb:before {
+  content: "\e902";
+}
+._icon-inst:before {
+  content: "\e903";
+}
+._icon-like:before {
+  content: "\e904";
+}

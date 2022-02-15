@@ -75,6 +75,13 @@ module.exports = {
       chunks: "all"
     },
   },
+  resolve: {
+    alias: {
+      '@assets': path.resolve(__dirname, 'src/assets'),
+      '@fonts': path.resolve(__dirname, 'src/assets/fonts'),
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
   plugins: plugins(),
   module: {
     rules:

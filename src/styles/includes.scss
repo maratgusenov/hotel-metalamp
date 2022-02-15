@@ -1,0 +1,97 @@
+@mixin media-xxl {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin media-xxl {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin font-face($font-name, $font-type, $weight:normal) {
+  @font-face {
+    font-family: $font-name;
+    src: url("@fonts/#{$font-type}.woff") format("woff"),
+    url("@fonts/#{$font-type}.woff2") format("woff2"),
+    url("@fonts/#{$font-type}.ttf") format("truetype");
+    font-weight: $weight;
+    font-display: swap;
+  }
+};
+
+@mixin icon-font($font-name, $font-type, $weight:normal, $fs: normal, $fd: block) {
+    @font-face {
+    font-family: $font-name;
+    src: url('@fonts/#{$font-type}.eot?sumeoz');
+    src: url('@fonts/#{$font-type}.eot?sumeoz#iefix') format('embedded-opentype'),
+      url('@fonts/#{$font-type}.ttf?sumeoz') format('truetype'),
+      url('@fonts/#{$font-type}.woff?sumeoz') format('woff'),
+      url('@fonts/#{$font-type}.svg?sumeoz#icon') format('svg');
+    font-weight: $weight;
+    font-display: $fd;
+    font-style: $fs;
+  } 
+}
+
+@mixin font-bold(
+  $fs: $body,
+  $cl: $dark-shade-100,
+  $lh: 24px,
+  $fstl: normal
+  ) 
+{
+  font-family: 'Montserrat-bold';
+  font-size: $fs;
+  line-height: $lh;
+  color: $cl;
+  font-style: $fstl;
+}
+
+@mixin font-normal(
+  $fs: $body,
+  $cl: $dark-shade-100,
+  $lh: 24px,
+  $fstl: normal
+) {
+  font-family: 'Montserrat-normal';
+  font-size: $fs;
+  line-height: $lh;
+  color: $cl;
+  font-style: $fstl;
+}
+
+
+@mixin font-icon(
+  $icon: $arrow, 
+  $fs: normal,
+  $fw: normal,
+  $fv: normal,
+  $lh: 1
+) {
+  font-family: 'font-icon';
+  speak: never;
+  font-style: $fs;
+  font-weight: $fw;
+  font-variant: $fv;
+  line-height: $lh;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &::before {
+    content: $icon;
+  }
+}

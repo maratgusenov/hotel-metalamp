@@ -1,0 +1,5 @@
+@import "./includes.scss";
+
+@include font-face('Montserrat-normal', 'Montserrat-regular', normal);
+@include font-face('Montserrat-bold', 'Montserrat-bold', bold);
+@include icon-font('font-icon', 'font-icon');
