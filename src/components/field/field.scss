@@ -37,4 +37,7 @@
     outline: none;
     border: none;
   }
+  &__icon-arrow {
+    @include font-icon($arrow, 24px,);
+  }
 }

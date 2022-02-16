@@ -11,12 +11,11 @@
       justify-content: space-between;
       align-items: center;
     }
-  &__title {
-    text-transform: uppercase;
-    @include font-bold($h3);
-  }
   &__item {
     list-style: none;
+    &::first-letter {
+      text-transform: uppercase;
+    };
     
     &_active {
       @include font-bold($body)
