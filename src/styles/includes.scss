@@ -33,14 +33,14 @@
   }
 };
 
-@mixin icon-font($font-name, $font-type, $weight:normal, $fs: normal, $fd: block) {
+@mixin icon-font($font-name, $font-type, $font-hash, $weight:normal, $fs: normal, $fd: block) {
     @font-face {
     font-family: $font-name;
-    src: url('@fonts/#{$font-type}.eot?sumeoz');
-    src: url('@fonts/#{$font-type}.eot?sumeoz#iefix') format('embedded-opentype'),
-      url('@fonts/#{$font-type}.ttf?sumeoz') format('truetype'),
-      url('@fonts/#{$font-type}.woff?sumeoz') format('woff'),
-      url('@fonts/#{$font-type}.svg?sumeoz#icon') format('svg');
+    src: url('@fonts/#{$font-type}.eot?#{$font-hash}');
+    src: url('@fonts/#{$font-type}.eot?#{$font-hash}#iefix') format('embedded-opentype'),
+      url('@fonts/#{$font-type}.ttf?#{$font-hash}') format('truetype'),
+      url('@fonts/#{$font-type}.woff?#{$font-hash}') format('woff'),
+      url('@fonts/#{$font-type}.svg?#{$font-hash}#font-icon') format('svg');
     font-weight: $weight;
     font-display: $fd;
     font-style: $fs;

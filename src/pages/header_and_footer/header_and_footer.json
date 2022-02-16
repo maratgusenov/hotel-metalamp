@@ -1,7 +1,7 @@
 {
   "header": {
     "logo": {
-      "src": "img/logo-toxin.svg",
+      "src": "assets/img/logo-toxin.svg",
       "href": "./index.html"
     },
     "items": [
@@ -42,7 +42,7 @@
   },
   "headerAccount": {
     "logo": {
-      "src": "img/logo-toxin.svg",
+      "src": "assets/img/logo-toxin.svg",
       "href": "./index.html"
     },
     "items": [
@@ -75,7 +75,7 @@
   },
   "footer": {
     "logo": {
-      "src": "img/logo-toxin.svg",
+      "src": "assets/img/logo-toxin.svg",
       "href": "./index.html"
     },
     "items": [
