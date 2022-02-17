@@ -16,11 +16,6 @@
   }
 }
 
-@mixin media-xxl {
-  @media (max-width: 1400px) {
-    @content;
-  }
-}
 
 @mixin font-face($font-name, $font-type, $weight:normal) {
   @font-face {
@@ -33,14 +28,14 @@
   }
 };
 
-@mixin icon-font($font-name, $font-type, $font-hash, $weight:normal, $fs: normal, $fd: block) {
+@mixin icon-font($font-name, $font-type, $weight:normal, $fs: normal, $fd: block) {
     @font-face {
     font-family: $font-name;
-    src: url('@fonts/#{$font-type}.eot?#{$font-hash}');
-    src: url('@fonts/#{$font-type}.eot?#{$font-hash}#iefix') format('embedded-opentype'),
-      url('@fonts/#{$font-type}.ttf?#{$font-hash}') format('truetype'),
-      url('@fonts/#{$font-type}.woff?#{$font-hash}') format('woff'),
-      url('@fonts/#{$font-type}.svg?#{$font-hash}#font-icon') format('svg');
+    src: url('@fonts/#{$font-type}.eot');
+    src: url('@fonts/#{$font-type}.eot') format('embedded-opentype'),
+      url('@fonts/#{$font-type}.ttf') format('truetype'),
+      url('@fonts/#{$font-type}.woff') format('woff'),
+      url('@fonts/#{$font-type}.svg##{$font-type}') format('svg');
     font-weight: $weight;
     font-display: $fd;
     font-style: $fs;
@@ -51,7 +46,8 @@
   $fs: $body,
   $cl: $dark-shade-100,
   $lh: 24px,
-  $fstl: normal
+  $fstl: normal,
+  $fw: bold
   ) 
 {
   font-family: 'Montserrat-bold';
@@ -59,36 +55,41 @@
   line-height: $lh;
   color: $cl;
   font-style: $fstl;
+  font-weight: $fw;
 }
 
 @mixin font-normal(
   $fs: $body,
   $cl: $dark-shade-100,
   $lh: 24px,
-  $fstl: normal
+  $fstl: normal,
+  $fw: normal
 ) {
   font-family: 'Montserrat-normal';
   font-size: $fs;
   line-height: $lh;
   color: $cl;
   font-style: $fstl;
+  font-weight: $fw;
 }
 
 
 @mixin font-icon(
-  $icon: $arrow, 
+  $icon: $arrow,
+  $fc: white, 
   $fs: normal,
   $fw: normal,
   $fv: normal,
   $lh: 1
 ) {
+  display: inline-block;
   font-family: 'font-icon';
   speak: never;
-  font-style: $fs;
+  color: $fc;
+  font-size: $fs;
   font-weight: $fw;
   font-variant: $fv;
   line-height: $lh;
-  text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   &::before {

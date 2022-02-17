@@ -10,12 +10,13 @@
   gap: 20px;
   max-width: 265px;
   padding-left: 5px;
+  @include font-normal($body);
   &__title {
     text-transform: uppercase;
     @include font-bold($h3,$dark-shade-100, 18px);
   }
   &__text {
-    @include font-normal($body, $dark-shade-75);
+    color: $dark-shade-75;
     &::first-letter {
       text-transform: uppercase;
     }

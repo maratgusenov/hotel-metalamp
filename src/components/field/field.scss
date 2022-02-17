@@ -1,43 +1,41 @@
 @import "../../styles/global.scss";
-@import "../../styles/veriables.scss";
 
 .field {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 20px;
   & * {
-    @include font-normal($h3);
+    @include font-normal($body, $dark-shade-75,);
   }
   &__item {
-    display: inline-block;
-    min-width: 100%;
+    display: inline-flex;
+    min-height: 44px;
     border: 1px solid black;
     border-radius: 4px;
-    padding: 0;
-    margin: 0;
   }
   &__mail { 
     width: calc(100% - 44px);
     outline: none;
     border: none;
-    vertical-align: middle;
-    ::first-letter {
-      text-transform: uppercase;
-      border-radius: 4px;
-      
+    &::placeholder {
+      &::first-letter{
+        text-transform: uppercase;
+      }
     }
   }
   &__submit {
-    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
-    height: 42px;
     cursor: pointer; 
     background: transparent;
     outline: none;
     border: none;
   }
   &__icon-arrow {
-    @include font-icon($arrow, 24px,);
+    @include font-icon($arrow, $purple, 18px);
   }
 }
