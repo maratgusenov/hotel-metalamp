@@ -29,7 +29,21 @@
   }
 };
 
-@mixin font-bold(
+@mixin font-awesome ($font-name, $font-type, $weight:normal, $fs: normal, $fd: block) {
+    @font-face {
+    font-family: $font-name; 
+    src: url('@fonts/#{$font-type}.eot');
+    src: url('@fonts/#{$font-type}.eot') format('embedded-opentype'),
+      url('@fonts/#{$font-type}.ttf') format('truetype'),
+      url('@fonts/#{$font-type}.woff') format('woff'),
+      url('@fonts/#{$font-type}.svg##{$font-type}') format('svg');
+    font-weight: $weight;
+    font-display: $fd;
+    font-style: $fs;
+  }
+}
+
+@mixin font-bold (
   $fs: $body,
   $cl: $dark-shade-100,
   $lh: 24px,
@@ -45,7 +59,7 @@
   font-weight: $fw;
 }
 
-@mixin font-normal(
+@mixin font-normal (
   $fs: $body,
   $cl: $dark-shade-100,
   $lh: 24px,
@@ -61,14 +75,14 @@
 }
 
 
-@mixin font-icon(
+@mixin material-icon (
   $fs: normal,
   $fc: white,
   $lh: normal,
   $fw: normal,
 ) {
   display: inline-block;
-  font-family: 'font-icon';
+  font-family: 'Material-icons';
   speak: never;
   color: $fc;
   font-size: $fs;
@@ -82,4 +96,29 @@
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+}
+
+@mixin awesome-icon (
+  $icon: $twit,
+  $fc: white, 
+  $fs: normal,
+  $fw: normal,
+  $fv: normal,
+  $lh: 1
+) {
+  display: inline-block;
+  font-family: 'Social-icons';
+  speak: never;
+  font-style: $fs;
+  color: $fc;
+  font-size: $fs;
+  font-weight: $fw;
+  font-variant: $fv;
+  line-height: $lh;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &:before {
+    content: $icon; 
+  }
 }

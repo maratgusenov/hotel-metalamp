@@ -41,6 +41,6 @@
     background-clip: text;
   }
   &__icon-arrow {
-    @include font-icon(24px, transparent);
+    @include material-icon(24px, transparent);
   }
 }

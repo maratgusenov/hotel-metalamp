@@ -2,4 +2,6 @@
 
 @include font-face('Montserrat-normal', 'Montserrat-regular', normal);
 @include font-face('Montserrat-bold', 'Montserrat-bold', bold);
-@include font-face('font-icon', 'Material-icons');
+@include font-face('Material-icons', 'Material-icons');
+
+@include font-awesome('Social-icons', 'Social-icons');
