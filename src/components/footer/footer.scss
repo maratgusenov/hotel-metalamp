@@ -6,6 +6,7 @@
   background-color: white;
   box-shadow: 0 0 5px rgb(31 32 65 / 50%);
   padding: 100px 110px 0px;
+  min-height: 372px;
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -14,17 +15,16 @@
     max-width: 1380px;
     margin: 0 auto;
   }
-  &__about {
-    padding-top: 20px;
-  }
   &__view {
     grid-column: span 3;
     gap: 20px;
     max-width: 265px;
     padding-right: 5px;
   }
- 
-  &__logo-img {
+  &__about {
+    padding-top: 15px;
+  }
+    &__logo-img {
     vertical-align: middle;
   }
 }

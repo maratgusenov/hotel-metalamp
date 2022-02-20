@@ -7,35 +7,40 @@
   justify-content: space-between;
   gap: 20px;
   & * {
-    @include font-normal($body, $dark-shade-75,);
+    @include font-normal($body, $dark-shade-75);
   }
   &__item {
-    display: inline-flex;
-    min-height: 44px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: 44px;
     border: 1px solid black;
     border-radius: 4px;
   }
   &__mail { 
-    width: calc(100% - 44px);
-    outline: none;
-    border: none;
-    &::placeholder {
-      &::first-letter{
-        text-transform: uppercase;
-      }
+  width: calc(100% - 44px);
+  height: 100%;
+  outline: none;
+  border: none;
+  padding-left: 15px;
+  &::placeholder {
+      color: $dark-shade-25;
     }
   }
   &__submit {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
     width: 44px;
+    height: 50px;
     cursor: pointer; 
-    background: transparent;
     outline: none;
     border: none;
+    background: $purple-gradient;
+    background-clip: text;
   }
   &__icon-arrow {
-    @include font-icon($arrow, $purple, 18px);
+    @include font-icon(24px, transparent);
   }
 }

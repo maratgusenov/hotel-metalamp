@@ -17,30 +17,17 @@
 }
 
 
-@mixin font-face($font-name, $font-type, $weight:normal) {
+@mixin font-face($font-name, $font-type, $weight:normal, $style: normal) {
   @font-face {
     font-family: $font-name;
     src: url("@fonts/#{$font-type}.woff") format("woff"),
     url("@fonts/#{$font-type}.woff2") format("woff2"),
     url("@fonts/#{$font-type}.ttf") format("truetype");
     font-weight: $weight;
+    font-style: $style;
     font-display: swap;
   }
 };
-
-@mixin icon-font($font-name, $font-type, $weight:normal, $fs: normal, $fd: block) {
-    @font-face {
-    font-family: $font-name;
-    src: url('@fonts/#{$font-type}.eot');
-    src: url('@fonts/#{$font-type}.eot') format('embedded-opentype'),
-      url('@fonts/#{$font-type}.ttf') format('truetype'),
-      url('@fonts/#{$font-type}.woff') format('woff'),
-      url('@fonts/#{$font-type}.svg##{$font-type}') format('svg');
-    font-weight: $weight;
-    font-display: $fd;
-    font-style: $fs;
-  } 
-}
 
 @mixin font-bold(
   $fs: $body,
@@ -75,24 +62,24 @@
 
 
 @mixin font-icon(
-  $icon: $arrow,
-  $fc: white, 
   $fs: normal,
+  $fc: white,
+  $lh: normal,
   $fw: normal,
-  $fv: normal,
-  $lh: 1
 ) {
   display: inline-block;
   font-family: 'font-icon';
   speak: never;
   color: $fc;
   font-size: $fs;
-  font-weight: $fw;
-  font-variant: $fv;
   line-height: $lh;
-  -webkit-font-smoothing: antialiased;
+  font-weight: $fw;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  &::before {
-    content: $icon;
-  }
+  font-feature-settings: 'liga';
 }

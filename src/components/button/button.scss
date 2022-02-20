@@ -15,7 +15,7 @@ a.button {
   text-transform: uppercase;
   &_theme {
     &-filled {
-      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      background: $purple-gradient;
       border-radius: 22px;
     }
     &-bordered {

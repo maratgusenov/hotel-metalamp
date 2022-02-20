@@ -144,7 +144,7 @@
       "text": "получайте специальные предложения и новости сервиса",
       "field": {
         "type": "email",
-        "text": "email",
+        "text": "Email",
         "submit": {
           "name": "email"
         }
