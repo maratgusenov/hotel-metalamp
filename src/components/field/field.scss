@@ -14,14 +14,20 @@
     align-items: flex-start;
     justify-content: center;
     max-height: 44px;
-    border: 1px solid black;
+    border: 1px solid $dark-shade-25;
     border-radius: 4px;
+    &:hover,
+    &:focus {
+      border: 1px solid $dark-shade-75;
+      outline: none;
+    }
   }
   &__mail { 
   width: calc(100% - 44px);
   height: 100%;
   outline: none;
   border: none;
+  border-radius: 4px;
   padding-left: 15px;
   &::placeholder {
       color: $dark-shade-25;
