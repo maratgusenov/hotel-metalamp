@@ -78,7 +78,7 @@
       "src": "assets/img/logo-toxin.svg",
       "href": "./index.html"
     },
-    "items": [
+    "nav": [
       {
         "title": "навигация",
         "list": [
@@ -149,6 +149,23 @@
           "name": "email"
         }
       }
+    },
+    "bottom": {
+      "copyright": "Copyright © 2018 Toxin отель. Все права защищены.",
+      "social": [
+        {
+          "name": "twit",
+          "ilnk": "./index.html"
+        },
+        {
+          "name": "fb",
+          "ilnk": "./index.html"
+        },
+        {
+          "name": "inst",
+          "ilnk": "./index.html"
+        }
+      ]
     }
   }
 }

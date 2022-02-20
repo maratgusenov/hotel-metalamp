@@ -1,6 +1,7 @@
 @import '../../styles/veriables.scss';
-@import "../footer-nav/footer-nav.scss";
-@import "../footer-subscribe/footer-subscribe.scss";
+@import '../footer-nav/footer-nav.scss';
+@import '../footer-subscribe/footer-subscribe.scss';
+@import '../footer-bottom/footer-bottom.scss';
 
 .footer {
   background-color: white;
@@ -10,7 +11,7 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 35px;
+    gap: 100px 35px;
     padding: 0 30px;
     max-width: 1380px;
     margin: 0 auto;

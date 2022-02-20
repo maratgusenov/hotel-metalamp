@@ -1,13 +1,15 @@
 include ../footer-nav/footer-nav
 include ../footer-subscribe/footer-subscribe
+include ../footer-bottom/footer-bottom
 
-mixin footer({ logo, items, subscribe})
+mixin footer({ logo, nav, subscribe, bottom})
   .footer
     .footer__container
       .footer__view
         a.footer__logo-link(href=logo.href || "./index.html")
           img.footer__logo-img(src=logo.src alt=logo.alt || "logo")
         .footer__about Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-      each item in items  
+      each item in nav 
         +footer-nav(item)
       +footer-subsribe(subscribe)
+      +footer-bottom(bottom)
