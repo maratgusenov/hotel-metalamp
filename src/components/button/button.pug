@@ -11,7 +11,7 @@ mixin button({href, title, theme, long, type})
   if href
     a.button(class=classArray href=href)
       span( class = theme ? "button_color-white" 
-      : "button__color-purple")=title
+      : "button_color-purple")=title
       if long
         span.button__arrow 
   else 

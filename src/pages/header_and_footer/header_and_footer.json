@@ -12,7 +12,26 @@
       },
       {
         "href": "./index.html",
-        "title": "услуги"
+        "title": "услуги",
+        "icon": true,
+        "sub": [
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин Константинопольский"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин первый"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин 2"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин третий 3"
+          }
+        ]
       },
       {
         "href": "./index.html",
@@ -24,7 +43,26 @@
       },
       {
         "href": "./index.html",
-        "title": "соглашения"
+        "title": "соглашения",
+        "icon": true,
+        "sub": [
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 1"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 2"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 3"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 4"
+          }
+        ]
       }
     ],
     "auth": [
