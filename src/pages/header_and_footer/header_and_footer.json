@@ -85,25 +85,63 @@
     },
     "items": [
       {
-        "link": "./index.html",
+        "href": "./index.html",
         "title": "о нас",
         "active": "true"
       },
       {
-        "link": "./index.html",
-        "title": "услуги"
+        "href": "./index.html",
+        "title": "услуги",
+        "icon": true,
+        "sub": [
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин Константинопольский"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин первый"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин 2"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "Константин третий 3"
+          }
+        ]
       },
       {
-        "link": "./index.html",
+        "href": "./index.html",
         "title": "вакансии"
       },
       {
-        "link": "./index.html",
-        "title": "повости"
+        "href": "./index.html",
+        "title": "новости"
       },
       {
-        "link": "./index.html",
-        "title": "соглашения"
+        "href": "./index.html",
+        "title": "соглашения",
+        "icon": true,
+        "sub": [
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 1"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 2"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 3"
+          },
+          {
+            "subhref": "./index.html",
+            "subtitle": "sub 4"
+          }
+        ]
       }
     ],
     "account": {
