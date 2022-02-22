@@ -1,6 +1,8 @@
 @import "../../styles/global.scss";
 
 .main {
+  margin: 0px;
+  min-height: 100vmax;
   &__link {
     padding: 30px 0 0 30px;
   }

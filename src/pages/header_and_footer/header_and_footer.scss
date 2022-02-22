@@ -5,8 +5,9 @@
 @import '../../styles/includes.scss';
 
 .header-footer {
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 40px;
-  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+  margin: 55px 0 0;
+  padding-bottom: 140px;
+  gap: 40px;
 }

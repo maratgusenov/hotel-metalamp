@@ -1,3 +1,4 @@
+@import '~normalize.css';
 @import "./veriables.scss";
 @import "./fonts.scss";
 
@@ -15,7 +16,6 @@ body {
 }
 
 html {
-  box-sizing: border-box;
   @include font-normal($body);
   background-color: white;
 }
