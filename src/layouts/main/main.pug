@@ -1,12 +1,13 @@
 block variables
 
 doctype html
-html(lang='en')
+html(lang='ru')
   head
     meta(charset='UTF-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
     meta(name="discription", content=discription)
-    meta(name="viewport", content="initial-scale=1.0, width=device-width")
     title #{title}
   body(class=background ? 'main main__background_grey' : 'main')
     img.main__link(src="assets/img/"+ logo alt="logo")
+    .block
     block content

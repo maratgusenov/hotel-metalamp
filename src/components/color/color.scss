@@ -2,7 +2,7 @@
 
 .color {
   display: flex;
-  display: row;
+  gap: 40px;
 
   &__name {
     @include font-bold($h2);
@@ -16,9 +16,8 @@
     justify-content: center;
   }
   &__box {  
-    width: 70px;
+    min-width: 70px;
     height: 70px;
-    margin-right: 40px;
     gap: 20px;
     border-radius: 10%;
   }
