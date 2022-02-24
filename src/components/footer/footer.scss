@@ -1,33 +1,14 @@
 @import '../../styles/veriables.scss';
-@import '../footer-nav/footer-nav.scss';
-@import '../footer-subscribe/footer-subscribe.scss';
+@import '../footer-head/footer-head.scss';
 @import '../footer-bottom/footer-bottom.scss';
 
 .footer {
-  background-color: white;
-  box-shadow: 0 0 5px rgb(31 32 65 / 50%);
-  width: 100%;
-  padding: 100px 30px 0;
-  &__container {
-    max-width: 1380px;
-    margin: 0 auto;
-    padding: 0 110px;
-  }
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 100px 35px;    
-  }
-  &__view {
-    grid-column: span 3;
-    gap: 20px;
-    max-width: 265px;
-    padding-right: 5px;
-  }
-  &__about {
-    padding-top: 15px;
-  }
-    &__logo-img {
-    vertical-align: middle;
+  min-width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 2px $dark-shade-50;
+  &__line {
+    height: 1px;
+    background-color: black;
+    opacity: 50%;
   }
 }

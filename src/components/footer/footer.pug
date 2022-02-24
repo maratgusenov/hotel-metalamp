@@ -1,16 +1,8 @@
-include ../footer-nav/footer-nav
-include ../footer-subscribe/footer-subscribe
+include ../footer-head/footer-head
 include ../footer-bottom/footer-bottom
 
-mixin footer({ logo, nav, subscribe, bottom})
+mixin footer({ head, bottom })
   footer.footer
-    .footer__container
-      .footer__grid
-        .footer__view
-          a.footer__logo-link(href=logo.href || "./index.html")
-            img.footer__logo-img(src=logo.src alt=logo.alt || "logo")
-          .footer__about Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-        each item in nav 
-          +footer-nav(item)
-        +footer-subsribe(subscribe)
-        +footer-bottom(bottom)
+    +footer-head(head)
+    .footer__line
+    +footer-bottom(bottom)

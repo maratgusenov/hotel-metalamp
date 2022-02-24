@@ -1,17 +1,18 @@
 @import "../../styles/global.scss";
 
 .field {
-  width: 100%;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  background: #fff;
   & * {
     @include font-normal($body, $dark-shade-75);
   }
   &__item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     max-height: 44px;
     border: 1px solid $dark-shade-25;
@@ -39,7 +40,7 @@
     vertical-align: middle;
     padding: 0;
     width: 44px;
-    height: 50px;
+    height: 44px;
     cursor: pointer; 
     outline: none;
     border: none;

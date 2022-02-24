@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
-
 html {
   @include font-normal($body);
   background-color: red;

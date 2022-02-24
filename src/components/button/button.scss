@@ -5,13 +5,12 @@ a.button {
   height: 34px;
   display: inline-flex;
   align-items: center;
-  background-origin: border-box;
   padding: 9px 20px 10px 19px;
 }
 
 .button {
   text-decoration: none;
-  @include font-bold($h3,$purple);
+  @include font-bold($h3,$purple, 14px);
   text-transform: uppercase;
   &_theme {
     &-filled {
@@ -26,6 +25,7 @@ a.button {
         left: 0;
         background: $purple-gradient;
         border-radius: 22px;
+        max-width: 320px;
       }
       &:hover:before {
         opacity: 0.5;

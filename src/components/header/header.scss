@@ -1,22 +1,26 @@
 @import "../nav/nav.scss";
 
 .header {
-  background-color: white;
-  box-shadow: 0 0 5px rgb(31 32 65 / 50%);
-  width: 100%;
-  padding: 15px 30px;
+  min-width: 100%;
   min-height: 70px;
+  padding: 15px 30px;
+  background-color: #fff;
+  box-shadow: 0 0 2px $dark-shade-50;
   &__nav {
-    display: flex;  
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
     max-width: 1380px;
-    padding: 0px 110px;
     margin: 0 auto;
-
+    padding: 0 110px;
   }
-  &__logo-img {
-    vertical-align: middle;
+  &__logo {
+      padding-right: 20px;
+    &-link {
+      display: flex;
+    }
+    &-img {
+
+    }
   }
 }

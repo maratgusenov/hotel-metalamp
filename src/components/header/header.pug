@@ -3,7 +3,6 @@ include ../nav/nav
 mixin header({items, auth, account, logo})
   .header
     .header__nav 
-      .header__logo 
-        a.header__logo-link(href=logo.href || "./index.html")
-          img.header__logo-img(src=logo.src alt=logo.alt || "logo")
+      a.header__logo-link(href=logo.href || "./index.html")
+        img.header__logo-img(src=logo.src alt=logo.alt || "logo")
       +nav({items, auth, account})

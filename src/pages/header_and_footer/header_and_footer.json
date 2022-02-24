@@ -150,79 +150,84 @@
     }
   },
   "footer": {
-    "logo": {
-      "src": "assets/img/logo-toxin.svg",
-      "href": "./index.html"
-    },
-    "nav": [
-      {
-        "title": "навигация",
-        "list": [
-          {
-            "href": "./index.html",
-            "item": "о нас"
-          },
-          {
-            "href": "./index.html",
-            "item": "новости"
-          },
-          {
-            "href": "./index.html",
-            "item": "служба поддержки"
-          },
-          {
-            "href": "./index.html",
-            "item": "услуги"
-          }
-        ]
+    "head": {
+      "view": {
+        "logo": {
+          "src": "assets/img/logo-toxin.svg",
+          "href": "./index.html"
+        },
+        "discription": "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»"
       },
-      {
-        "title": "о нас",
-        "list": [
-          {
-            "href": "./index.html",
-            "item": "о сервисе"
-          },
-          {
-            "href": "./index.html",
-            "item": "наша команда"
-          },
-          {
-            "href": "./index.html",
-            "item": "вакансии"
-          },
-          {
-            "href": "./index.html",
-            "item": "инвесторы"
+      "nav": [
+        {
+          "title": "навигация",
+          "list": [
+            {
+              "href": "./index.html",
+              "item": "о нас"
+            },
+            {
+              "href": "./index.html",
+              "item": "новости"
+            },
+            {
+              "href": "./index.html",
+              "item": "служба поддержки"
+            },
+            {
+              "href": "./index.html",
+              "item": "услуги"
+            }
+          ]
+        },
+        {
+          "title": "о нас",
+          "list": [
+            {
+              "href": "./index.html",
+              "item": "о сервисе"
+            },
+            {
+              "href": "./index.html",
+              "item": "наша команда"
+            },
+            {
+              "href": "./index.html",
+              "item": "вакансии"
+            },
+            {
+              "href": "./index.html",
+              "item": "инвесторы"
+            }
+          ]
+        },
+        {
+          "title": "служба поддержки",
+          "list": [
+            {
+              "href": "./index.html",
+              "item": "соглашения"
+            },
+            {
+              "href": "./index.html",
+              "item": "сообщества"
+            },
+            {
+              "href": "./index.html",
+              "item": "связь с нами"
+            }
+          ]
+        }
+      ],
+      "subscribe": {
+        "title": "подписка",
+        "text": "получайте специальные предложения и новости сервиса",
+        "field": {
+          "type": "email",
+          "text": "Email",
+          "submit": {
+            "name": "email"
           }
-        ]
-      },
-      {
-        "title": "служба поддержки",
-        "list": [
-          {
-            "href": "./index.html",
-            "item": "соглашения"
-          },
-          {
-            "href": "./index.html",
-            "item": "сообщества"
-          },
-          {
-            "href": "./index.html",
-            "item": "связь с нами"
-          }
-        ]
-      }
-    ],
-    "subscribe": {
-      "title": "подписка",
-      "text": "получайте специальные предложения и новости сервиса",
-      "field": {
-        "type": "email",
-        "text": "Email",
-        "submit": {
-          "name": "email"
         }
       }
     },

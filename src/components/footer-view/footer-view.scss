@@ -1,0 +1,9 @@
+.footer-view {
+    grid-column: span 3;
+    gap: 20px;
+    max-width: 265px;
+    padding-right: 5px;
+  &__about {
+    padding-top: 15px;
+  }
+}

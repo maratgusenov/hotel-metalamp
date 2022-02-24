@@ -1,0 +1,11 @@
+include ../footer-view/footer-view
+include ../footer-nav/footer-nav
+include ../footer-subscribe/footer-subscribe
+
+mixin footer-head({view, nav, subscribe})
+  .footer-head
+    .footer-head__grid 
+      +footer-view(view)
+      each item in nav 
+        +footer-nav(item)
+      +footer-subscribe(subscribe)
