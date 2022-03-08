@@ -1,8 +1,8 @@
 include ../nav/nav
+include ../logo/logo
 
-mixin header({items, auth, account, logo})
+mixin header({logo, items, auth, account})
   .header
     .header__nav 
-      a.header__logo-link(href=logo.href || "./index.html")
-        img.header__logo-img(src=logo.src alt=logo.alt || "logo")
+      +logo(logo)
       +nav({items, auth, account})

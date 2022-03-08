@@ -7,16 +7,16 @@ mixin nav({items, auth, account})
       if items
         each item in items
           - const { href, title, active, icon, sub } = item
-          li.nav__item(class = active ? "nav__item_active" : "")
-            a.nav__link(href=href || "./index.html")= title
-            if icon 
-              span.nav__icon expand_more
-            if sub 
-              ul.nav__sub
-                each list in sub
-                  - const { subhref, subtitle } = list 
-                  li.nav__sub-item
-                    a.nav__sub-link(href=subhref|| "./index.html")= subtitle
+            li.nav__item(class = active ? "nav__item_active" : "")
+              a.nav__link(href=href || "./index.html")= title
+              if icon 
+                span.nav__icon expand_more
+              if sub 
+                ul.nav__sub
+                  each list in sub
+                    - const { subhref, subtitle } = list 
+                    li.nav__sub-item
+                      a.nav__sub-link(href=subhref|| "./index.html")= subtitle
 
       if auth 
         each button in auth

@@ -3,10 +3,9 @@
 @import '../footer-subscribe/footer-subscribe.scss';
 
 .footer-head {
-  padding: 140px 110px;
+  padding: 100px 110px;
   max-width: 1380px;
   margin: 0 auto;
-
   &__grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);

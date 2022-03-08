@@ -1,7 +1,7 @@
 @import "../../styles/global.scss";
 
 .field {
-  max-width: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,9 +12,9 @@
   }
   &__item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    max-height: 44px;
+    height: 44px;
     border: 1px solid $dark-shade-25;
     border-radius: 4px;
     &:hover,
@@ -24,12 +24,15 @@
     }
   }
   &__mail { 
-  width: calc(100% - 44px);
-  height: 100%;
-  outline: none;
-  border: none;
-  border-radius: 4px;
-  padding-left: 15px;
+    width: calc(100% - 44px);
+    vertical-align: middle;
+    padding: 0;
+    min-height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding-left: 15px;
+    box-sizing: border-box;
   &::placeholder {
       color: $dark-shade-25;
     }
@@ -39,8 +42,8 @@
     text-align: center;
     vertical-align: middle;
     padding: 0;
-    width: 44px;
-    height: 44px;
+    min-width: 44px;
+    min-height: 100%;
     cursor: pointer; 
     outline: none;
     border: none;
@@ -49,5 +52,6 @@
   }
   &__icon-arrow {
     @include material-icon(24px, transparent);
+    vertical-align: middle;
   }
 }

@@ -1,4 +1,5 @@
 @import "../nav/nav.scss";
+@import "../logo/logo.scss";
 
 .header {
   min-width: 100%;
@@ -13,14 +14,5 @@
     max-width: 1380px;
     margin: 0 auto;
     padding: 0 110px;
-  }
-  &__logo {
-      padding-right: 20px;
-    &-link {
-      display: flex;
-    }
-    &-img {
-
-    }
   }
 }
