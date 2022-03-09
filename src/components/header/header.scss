@@ -3,8 +3,7 @@
 
 .header {
   min-width: 100%;
-  min-height: 70px;
-  padding: 15px 30px;
+  padding: 0px 30px;
   background-color: #fff;
   box-shadow: 0 0 2px $dark-shade-50;
   &__nav {
@@ -14,5 +13,6 @@
     max-width: 1380px;
     margin: 0 auto;
     padding: 0 110px;
+    min-height: 70px;
   }
 }

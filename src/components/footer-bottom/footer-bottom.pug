@@ -1,8 +1,9 @@
 mixin footer-bottom({copyright, social})
   .footer-bottom
-    .footer-bottom__copyright=copyright  
-    .footer-bottom__social
-      each item in social
-        - const {name, link} = item
-          a(class= "footer-bottom__social_"+name
-            href=link || "./index.html")
+    .footer-bottom__wrapper
+      .footer-bottom__copyright=copyright  
+      .footer-bottom__social
+        each item in social
+          - const {name, link} = item
+            a(class= "footer-bottom__social_"+name
+              href=link || "./index.html")

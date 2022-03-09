@@ -32,7 +32,7 @@
       display: inline-block;
       background-color: white;
       outline: none;
-      border: 1px solid $dark-shade-50;
+      border: 1px solid $dark-shade-10;
       border-radius: 4px;
       white-space: normal;
       z-index: 99;
@@ -47,12 +47,13 @@
       text-transform: uppercase;
     }
     &:hover {
-      border-bottom: 1px solid $dark-shade-75;
+      border-bottom: 1px solid $dark-shade-50;
     }
   }
   &__acc {
-    border-left: 1px solid $dark-shade-50;
+    border-left: 1px solid $dark-shade-10;
     padding-left: 20px;
+    line-height: 30px;
     list-style: none;
   }
   &__sub {

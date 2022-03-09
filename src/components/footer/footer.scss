@@ -8,7 +8,6 @@
   box-shadow: 0 0 2px $dark-shade-50;
   &__line {
     height: 1px;
-    background-color: black;
-    opacity: 50%;
+    background-color:$dark-shade-10;
   }
 }
