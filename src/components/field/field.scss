@@ -10,13 +10,17 @@
   & * {
     @include font-normal($body, $dark-shade-75);
   }
+  &__input {
+    max-width: 320px;
+  }
   &__item {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: stretch;
     height: 44px;
     border: 1px solid $dark-shade-25;
     border-radius: 4px;
+    max-width: 260px;
     &:hover,
     &:focus {
       border: 1px solid $dark-shade-75;
@@ -25,14 +29,13 @@
   }
   &__mail { 
     vertical-align: middle;
-    flex-grow: 1;
     padding: 0;
+    width: calc(100% - 44px);
     min-height: 100%;
     outline: none;
     border: none;
     border-radius: 4px;
     padding-left: 15px;
-    box-sizing: border-box;
   &::placeholder {
       color: $dark-shade-25;
     }

@@ -2,14 +2,19 @@ mixin field({title, type, text, submit})
   form.field
     if title 
       .field__title=title 
-    .field__item
-      input.field__mail(
-        type=type
-        placeholder=text
-      )
-      if submit 
+    if submit 
+      .field__item
+        input.field__mail(
+          type=type
+          placeholder=text
+        )
         button.field__submit(type="submit" name=submit.name)
           span.field__icon-arrow arrow_forward
+    else 
+      input.field__input(
+          type=type
+          placeholder=text
+        )
 
 
 
