@@ -1,15 +1,18 @@
 @import "../field/field.scss";
 
 .footer-subscribe {
-  grid-column: span 3;
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  padding-left: 5px;
-  gap: 15px;
-  margin: 0;
-  max-width: 265px;
-
+  justify-content: flex-end;
+  grid-column: span 3;
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 5px;
+    gap: 15px;
+    margin: 0;
+    max-width: 265px;
+  }
   @include font-normal($body);
   &__title {
     text-transform: uppercase;

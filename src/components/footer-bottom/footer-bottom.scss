@@ -1,16 +1,16 @@
 .footer-bottom {
-  margin: 0 30px;
-  &__wrapper {
-    display: flex;
+  display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 0 110px;
-    max-width: 1380px;
+    padding: 0 140px;
+    max-width: 1440px;
     position: relative;
     min-height: 70px;
-  }
+    @include media-xxl {
+      padding: 0 30px;
+    }
   &__copyright {
     @include font-normal($body, $dark-shade-75)
   }

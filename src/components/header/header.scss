@@ -3,16 +3,18 @@
 
 .header {
   min-width: 100%;
-  padding: 0px 30px;
   background-color: #fff;
   box-shadow: 0 0 2px $dark-shade-50;
   &__nav {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto; 
     align-items: center;
-    max-width: 1380px;
-    margin: 0 auto;
-    padding: 0 110px;
+    max-width: 1440px;
+    padding: 0 140px;
     min-height: 70px;
+    @include media-xxl {
+      padding: 0 30px;
+    }
   }
 }

@@ -1,5 +1,5 @@
 @mixin media-xxl {
-  @media (max-width: 1400px) {
+  @media (max-width: 1420px) {
     @content;
   }
 }
@@ -11,7 +11,7 @@
 }
 
 @mixin media-lg {
-  @media (max-width: 992px) {
+  @media (max-width: 932px) {
     @content;
   }
 }

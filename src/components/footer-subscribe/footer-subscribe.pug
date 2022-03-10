@@ -2,7 +2,8 @@ include ../field/field
 
 mixin footer-subscribe({title, text, field})
   .footer-subscribe
-    .footer-subscribe__title= title
-    .footer-subscribe__text= text
-    if field 
-      +field(field)
+    .footer-subscribe__content
+      .footer-subscribe__title= title
+      .footer-subscribe__text= text
+      if field 
+        +field(field)
