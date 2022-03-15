@@ -1,5 +1,14 @@
 {
-  "title": "text field",
-  "type": "email",
-  "text": "Email"
+  "field": [
+    {
+      "title": "text field",
+      "type": "email",
+      "text": "Email"
+    },
+    {
+      "title": "masked text field",
+      "type": "text",
+      "text": "Email"
+    }
+  ]
 }

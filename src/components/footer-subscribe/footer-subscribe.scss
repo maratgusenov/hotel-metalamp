@@ -1,8 +1,7 @@
 @import "../field/field.scss";
 
 .footer-subscribe {
-  display: flex;
-  justify-content: flex-end;
+  justify-self: flex-end;
   grid-column: span 3;
   &__content {
     display: flex;

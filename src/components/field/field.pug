@@ -7,6 +7,7 @@ mixin field({title, type, text, submit})
         input.field__mail(
           type=type
           placeholder=text
+          name=name
         )
         button.field__submit(type="submit" name=submit.name)
           span.field__icon-arrow arrow_forward
@@ -14,6 +15,7 @@ mixin field({title, type, text, submit})
       input.field__input(
           type=type
           placeholder=text
+          name=name
         )
 
 

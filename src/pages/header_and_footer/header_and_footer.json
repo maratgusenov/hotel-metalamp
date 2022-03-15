@@ -225,6 +225,7 @@
         "field": {
           "type": "email",
           "text": "Email",
+          "name": "email",
           "submit": {
             "name": "email"
           }
