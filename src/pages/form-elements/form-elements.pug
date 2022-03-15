@@ -1,5 +1,5 @@
 extends ../../layouts/main/main
-include ../../components/color/color
+include ../../components/field/field
 include ../../components/type/type
 
 block variables
@@ -9,8 +9,11 @@ block variables
   - var background = false;
 
 block content
-  - const { field } = require('./form-elements.json')
+  - const { fields } = require('./form-elements.json')
   .components
+    each field in fields
+      +field(field)
+
     
 
     

@@ -1,5 +1,5 @@
 {
-  "field": [
+  "fields": [
     {
       "title": "text field",
       "type": "email",
@@ -8,7 +8,7 @@
     {
       "title": "masked text field",
       "type": "text",
-      "text": "Email"
+      "text": "ДД.ММ.ГГГГ"
     }
   ]
 }
