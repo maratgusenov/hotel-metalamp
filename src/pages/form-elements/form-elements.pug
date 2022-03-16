@@ -11,8 +11,9 @@ block variables
 block content
   - const { fields } = require('./form-elements.json')
   .components
-    each field in fields
-      +field(field)
+    .components__column
+      each field in fields
+        +field(field)
 
     
 

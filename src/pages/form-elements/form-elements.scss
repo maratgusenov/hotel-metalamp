@@ -1,6 +1,15 @@
 @import "../../components/field/field.scss";
+@import "../../layouts/main/main.scss";
 
 .components {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  gap: 35px;
+  width: 100%;
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
