@@ -10,5 +10,25 @@
       "type": "text",
       "text": "ДД.ММ.ГГГГ"
     }
-  ]
+  ],
+  "checkbox": {
+    "title": "ckeckbox buttons",
+    "items": [
+      {
+        "type": "checkbox",
+        "name": "checkbox-1",
+        "text": "можно курить"
+      },
+      {
+        "type": "checkbox",
+        "name": "checkbox-2",
+        "text": "можно с питомцами"
+      },
+      {
+        "type": "checkbox",
+        "name": "checkbox-3",
+        "text": "можно пригласить гостей (до 10 человек)"
+      }
+    ]
+  }
 }

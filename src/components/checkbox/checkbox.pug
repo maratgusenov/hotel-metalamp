@@ -1,0 +1,13 @@
+mixin checkbox({items, title})
+  .checkbox 
+    if title 
+      .checkbox__title=title
+    each item in items
+      - const { type, name, text } = item
+        label.checkbox__label  
+          input.checkbox__input(
+            type=type,
+            name=name
+          )
+          span.checkbox__fake-button
+          span.checkbox__text=text

@@ -1,0 +1,28 @@
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  &__title {
+    @include font-bold($h3, $dark-shade-100, 15px);
+    text-transform: uppercase;
+    padding-bottom: 3px;
+  }
+  &__label {
+    display: flex;
+    flex-direction: row;
+  }
+  &__fake-button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $dark-shade-25;
+    border-radius: 4px;
+  }
+  &__input {
+    display: none;
+  }
+  &__text {
+    @include font-normal($body, $dark-shade-50, 18px);
+    padding-left: 10px;
+  }
+}
