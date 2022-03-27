@@ -30,5 +30,20 @@
         "text": "можно пригласить гостей (до 10 человек)"
       }
     ]
+  },
+  "radio": {
+    "title": "radio buttons",
+    "items": [
+      {
+        "type": "radio",
+        "name": "gender",
+        "text": "мужчина"
+      },
+      {
+        "type": "radio",
+        "name": "gender",
+        "text": "женщина"
+      }
+    ]
   }
 }

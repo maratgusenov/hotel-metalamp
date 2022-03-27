@@ -1,6 +1,7 @@
 extends ../../layouts/main/main
 include ../../components/field/field
 include ../../components/checkbox/checkbox
+include ../../components/radio/radio
 
 block variables
   - var title = "form-elements";
@@ -9,13 +10,14 @@ block variables
   - var background = false;
 
 block content
-  - const { fields, checkbox } = require('./form-elements.json')
+  - const { fields, checkbox, radio } = require('./form-elements.json')
   .components
     .components__column
       each field in fields
         +field(field)
     .components__column
       +checkbox(checkbox)
+      +radio(radio)
 
     
 
