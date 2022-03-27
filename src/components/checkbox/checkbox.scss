@@ -12,14 +12,21 @@
     display: flex;
     flex-direction: row;
   }
-  &__fake-button {
-    width: 20px;
+  &__box {
     height: 20px;
+    width: 20px;
     border: 1px solid $dark-shade-25;
     border-radius: 4px;
   }
   &__input {
-    display: none;
+    -webkit-appearance: none;
+    -moz-appearancee: none;
+    appearance: none;
+    &:checked + .checkbox__box {
+      background: url('../../assets/img/check.svg') center no-repeat,
+      linear-gradient(white, white) padding-box, $purple-gradient border-box;
+      border: 1px solid transparent;
+    }
   }
   &__text {
     @include font-normal($body, $dark-shade-50, 18px);
